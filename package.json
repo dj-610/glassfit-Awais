@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "nuxt": "^3.17.1",
+    "tailwindcss": "^4.1.5",
+    "vue": "^3.5.13",
+    "vue-country-dropdown": "^2.0.10",
+    "vue-country-flag-next": "^2.3.2",
+    "vue-router": "^4.5.1",
+    "vue-tel-input": "^6.0.5",
+    "vue3-country-intl": "^2.0.9",
+    "vue3-country-region-select": "^1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+}
