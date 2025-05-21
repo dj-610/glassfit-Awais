@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: deploy
  
 on:
   push:
@@ -6,20 +6,20 @@ on:
       - main
  
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
  
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v3
  
-      - name: Setup Node
+      - name: Use Node.js 20 (LTS)
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '20'
  
       - name: Install dependencies
-        run: npm install
+        run: npm ci
  
       - name: Generate static site
         run: npm run generate
@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: .output/public

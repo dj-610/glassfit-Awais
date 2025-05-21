@@ -618,8 +618,7 @@
 
 <script setup>
 import { useRoute, useRouter } from "vue-router";
-import { useProducts } from "~/composables/useProduct";
-import { useProductSelection } from "~/composables/useProductSelection";
+import { useProducts } from "../../composables/useProduct";
 
 const route = useRoute();
 const router = useRouter();
