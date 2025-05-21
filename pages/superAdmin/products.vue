@@ -56,7 +56,7 @@
           >
             <td class="p-4 flex items-center gap-2">
               <input type="checkbox" class="size-4 bg-gray-200 cursor-pointer" />
-              <img src="..." alt="product" class="w-5 h-5 object-contain" />
+              <img src="" alt="product" class="w-5 h-5 object-contain" />
               {{ row.productName }}
             </td>
             <td class="p-4">{{ row.productPrice }}</td>
