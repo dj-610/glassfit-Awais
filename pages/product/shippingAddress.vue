@@ -56,7 +56,7 @@
             <option value="">United States</option>
           </select>
         </div>
-        <baseButton type="custom" class="bg-black text-white">
+        <baseButton type="custom" class="bg-black text-white" @click="continueToShip">
           Continue</baseButton
         >
       </div>
@@ -66,10 +66,17 @@
 <script setup>
 import { VueTelInput } from "vue-tel-input";
 import "vue-tel-input/dist/vue-tel-input.css";
+import {useRouter } from "vue-router";
+
+const router = useRouter();
+function continueToShip() {
+  router.push('/product/bag');
+}
 
 definePageMeta({
   path: "/product/shippingAddress",
 });
+
 const form = reactive({
   fullName: "",
   phone: "",
